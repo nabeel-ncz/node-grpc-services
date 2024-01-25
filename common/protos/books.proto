@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package bookPackage;
+
+import "google/protobuf/empty.proto";
+
+service Book {
+    rpc createBook(createBookRequest) returns (createBookResponse) {};
+    rpc getAllBooks(google.protobuf.Empty) returns (getAllBooksResponse) {};
+}
+
+message createBookRequest {
+    string userId = 1;
+    string title = 2;
+    string description = 3;
+    int64 price = 4;
+}
+
+message createBookResponse {
+    bool success = 1;
+    string message = 2;
+}
+
+message getAllBooksResponse {
+    repeated createBookRequest objects = 1;
+}

@@ -1,8 +1,7 @@
 {
-  "name": "@muhammed_nabeel/grpcshopcommon",
-  "version": "1.0.0",
-  "description": "common package for my grpc service",
-  "main": "index.js",
+  "name": "@muhammed_nabeel/grpcshop",
+  "version": "1.0.2",
+  "description": "",
   "scripts": {
     "build": "tsc"
   },
